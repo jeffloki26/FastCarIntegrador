@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastCarIntegrador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <%- include("./partials/header") %>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <p>Os Melhores veiculos do Mercado, melhores serviços tudo do no mesmo lugar!Compre seu veiculo importado, faça sua manutenção ou tune seu carrro e deixe ele unico!</p>
+                <img src="img/kisspng-ferrari-f430-challenge-lamborghini-murciélago-spo-luxury-cars-5b65003a4f7251.4254277015333458503254.png" alt="Carros da tela inicaial">
+            </div>
+        </section>
+        <section class="produtos">
+            <div class="container">
+                <h2>produtos</h2>
+                <div class="items">
+                  <% produtos.forEach(function(produto) { %>
+                    <article>
+                      <div class="thumb"><img src="/uploads/<%= produto.imagem %>" style="width: 100%; height: 100%"></div>
+                      <h3><%= produto.nome %></h3>
+                      <h4>R$ <%= produto.valor %></h4>
+                    </article>
+    
+                    <% }) %>
+                </div>
+            </div>
+        </section>
+        <section class="sobre">
+            <div class="container">
+                <img src="img/pexels-mike-192499.jpg" alt="Ilustração de pessoa passeando com um cachorro na cidade">
+                <div class="text">
+                    <h3>Os Carros mais incriveis e mais raros do Mercado ...
+                    </h3>
+                    <p>Na <strong>FastCarIntegrador</strong> você acha os melhores veiculos para sua compra.
+                    Os melhores serviços para os seus importatos e customizados.
+                    E caso ainda não tenha um carro tunado venha personalizar seu veiculo conosco !</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+
+</html>
