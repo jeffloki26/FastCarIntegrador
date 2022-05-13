@@ -13,7 +13,7 @@ module.exports = (connection, DataTypes) => {
     tableName: 'produto_favorito_usuario'
   })
 
-  model.sync({ alter: true })
+  model.sync({ alter: true }) 
 
   return model
 }
