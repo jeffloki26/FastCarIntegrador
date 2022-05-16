@@ -1,3 +1,3 @@
-# petshop-express
+# FastCarIntegrador
 
-Projeto do petshop usado no curso node full stack da Digital House
+Projeto Integrador usado para o curso node full stack da Digital House
