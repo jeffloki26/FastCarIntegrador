@@ -1,19 +1,17 @@
-<link rel="stylesheet" href="css/style.css">
 <header>
   <div class="container">
-      <a class="logo" href="/"><img src="/img/kisspng-car-logo-automobile-repair-shop-motor-vehicle-serv-5afc251db7d150.2550404015264740137529.png" alt="FastCarIntegrador"></a>
+      <a class="logo" href="index.html"><img src="img/carro-logo-2.png" alt="Carro logo"></a>
+      <h1>Fast Car Integrador</h1>
   <nav>
       <ul>
           <li><a href="/sobre">Sobre</a></li>
-          <li><a href="/produtos">Nossos produtos</a></li>
+          <li><a href="/produtos">Produtos</a></li>
           <li><a href="/contato">Contato</a></li>
           <% if(estaLogado) { %>
-            <li><a href="/admin"><%= usuarioLogado.nome %></a></li>
-            <li><a href="/logout">Logout</a></li>
-          <% } else { %>
+            <li><a href="/logout"><%= nomeUsuario %> (Fazer logout)</a></li>
+            <% } else { %>
             <li><a href="/login">Login</a></li>
           <% } %>
-      </ul>
   </nav>
   </div>
 </header>

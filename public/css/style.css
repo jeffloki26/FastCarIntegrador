@@ -8,7 +8,7 @@ body {
     font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
-    color: #d62828;
+    color: #575757;
 }
 
 .container {
@@ -24,15 +24,10 @@ h2,
 h3 {
     text-transform: uppercase;
     font-weight: 400;
-    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 section {
     padding: 100px 0;
-}
-
-section p {
-    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 .btn,
@@ -50,7 +45,14 @@ a.btn.btn-primary {
     background-color: #023e8a;
     border-color: #023e8a;
     color: #fff;
-    box-shadow: 10px 5px 5px #403d39;
+}
+
+.btn.btn-second,
+a.btn.btn-second {
+    background-color: #023e8a;
+    border-color: #023e8a;
+    color: #fff;
+    width: 480px;
 }
 
 .align-row {
@@ -58,21 +60,21 @@ a.btn.btn-primary {
     justify-content: space-between;
 }
 
-body   {
-    background: linear-gradient(to bottom, #fde2e4, #fff1e6);
-
-}
-
 
 header {
     width: 100%;
-    background-color: #76c893;
+    background-color: #023e8a;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #E5E5E5;
+}
+
+header .logo img {
+    width: 150px;
 }
 
 header nav ul {
@@ -90,13 +92,8 @@ header nav ul li a:any-link {
     color: #fff;
     display: inline-block;
     padding: 10px;
+    font-size: 30px;
 }
-
-header .logo img {
-    width: 200px;
-    
-}
-
 
 section.banner p {
     width: 500px;
@@ -108,57 +105,87 @@ section.banner img {
     max-width: 100%;
 }
 
-section.produtos {
-    background: linear-gradient(to bottom, #6c757d, #ced4da);
+section.servicos {
+    background-color: #E5E5E5;
 }
 
-section.produtos .container {
+section.servicos .container {
     flex-direction: column;
 }
 
-section.produtos .items {
+section.servicos .items {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-section.produtos .items article {
+section.servicos .items article {
     width: 230px;
     margin: 30px;
 }
 
-section.produtos .items article h3 {
+section.servicos .container h2 {
     text-transform: none;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 30px;
+    color: #000000;
 }
 
-section.produtos .items article h4 {
-    font-size: 16px;
+section.servicos .items article h3 {
+    text-transform: none;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: #000000;
+}
+
+section.servicos .items article h4 {
+    font-size: 20px;
     font-weight: 300;
     margin: 0;
+    color: #000000;
 }
 
-section.produtos .items .thumb {
+section.servicos .items article h5 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    color: #000000;
+}
+
+section.finalizar .total {
     width: 100%;
-    height: 200px;
-    background-color: #fff;
+    display: flex;
+    padding-left: 740px;
+}
+
+section.finalizar .total article {
+    width: 230px;
+    margin: 50px;
+}
+
+section.finalizar .total article h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    color: #000000;
+}
+
+section.finalizar .total article h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    color: #000000;
+}
+
+section.finalizar .total article h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    color: #000000;
+}
+
+section.finalizar .total article img {
+    width: 500px;
 }
 
 section.sobre {
@@ -169,6 +196,7 @@ section.sobre .text {
     padding: 50px;
     width: 600px;
     max-width: 100%;
+    font-size: 30px;
 }
 
 section.sobre .text p {
@@ -182,74 +210,59 @@ footer {
 
 footer .info {
     padding: 30px;
+    font-size: 25px;
 }
 
 footer .logo-icon img {
-    width: 200px;
-    
+    width: 300px;
 }
 
 footer a:any-link,
 footer p {
-    color: white;
+    color: #E5E5E5;
 }
-
-footer .mapa iframe {
-    width: 450px;
-    height: 200px;
-    max-width: 100%;
-}
-
-/* SOBRE */
 
 section.team .container {
     flex-direction: column;
     align-items: flex-start;
+    font-size: 30px;
 }
 
-section.produtos-lista .container {
+section.servicos-lista .container {
     flex-direction: column;
 }
 
-section.produtos-lista h1 {
-    color: #6c757d;
+section.servicos-lista h1 {
+    color: #023e8a;
     font-size: 40px;
     margin-bottom: 70px;
 }
 
-section.produtos-lista article {
+section.servicos-lista article {
     display: flex;
-    /* justify-content: space-between; */
     align-items: flex-start;
     padding: 50px;
     width: 100%;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-section.produtos-lista article .thumb {
+section.servicos-lista article .thumb {
     max-width: 100%;
     width: 250px;
     height: 250px;
-    background-color: #555;
+    background-color: rgb(0, 0, 0);
     margin: 0 30px 30px;
 }
 
-section.produtos-lista article .info {
+section.servicos-lista article .info {
     padding: 0 30px;
     width: 800px;
     max-width: 100%;
 }
 
-section.produtos-lista article .info h2 {
+section.servicos-lista article .info h2 {
     margin-top: 0;
 }
-
-section.sobre img {
-    width: 500px;
-    height: 250px;
-}
-
-/* contato */
 
 section.contato .container {
     flex-direction: column;
@@ -257,7 +270,7 @@ section.contato .container {
 }
 
 section.contato h1 {
-    color: #FFBE51;
+    color: #023e8a;
     font-size: 40px;
     margin-bottom: 70px;
 }
