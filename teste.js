@@ -3,21 +3,21 @@ const { Produto } = require('./models')
 const Inserir = [
   {
     "imagem": "7b475d624a8f8260effa5697dcc88915",
-    "nome": "Bebedouro Inox",
-    "descricao": "Bebedouro simples",
-    "valor": 89
+    "nome": "Revisão Completa",
+    "descricao": "Revisão total para seu veículo",
+    "valor": 1500
   },
   {
     "imagem": "c9cb0b9731c391f3eca71db7116024ce",
-    "nome": "Bola gelada",
-    "descricao": "Uma bolinha de gel para colocar no freezer",
-    "valor": 25
+    "nome": "Jg Roda Aro 20 Audi",
+    "descricao": "Jogo de rodas para Audi",
+    "valor": 5500
   },
   {
     "imagem": "613812e26b6a34e5640c13f06b828490",
-    "nome": "Fonte bebedouro",
-    "descricao": "Um bebedouro com água corrente",
-    "valor": 110
+    "nome": "Mercedes CLA 250 - 2022/2022",
+    "descricao": "Veículo de extrema imponência e perfeita utilização",
+    "valor": 310.900
   },
   {
     "imagem": "1fcf978d400da66f8bae58b6d4916668",
