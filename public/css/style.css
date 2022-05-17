@@ -317,3 +317,7 @@ section.contato a:any-link,
 section.contato p {
     color: #575757;
 }
+section.sobre img {
+    width: 600px;
+    height: 600px;
+}

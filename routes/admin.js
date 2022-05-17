@@ -79,12 +79,7 @@ router.get('/produtos/criar', async function(req, res) {
   })
 })
 
-/*
-O nome do produto tem mais de 3 caracteres;
-Os campos Nome, Descrição e Preço foram preenchidos;
-O campo Descrição tem mais de 10 caracteres.
-O campo preço é do tipo numérico.
-*/
+
 function validaCadastroProduto(req, res, next) {
   if(!req.body.nome || !req.body.descricao || !req.body.valor) {
     res.render('erro-validacao', { mensagemErro: 'Preencha todos os campos' })
