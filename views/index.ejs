@@ -14,8 +14,8 @@
     <main>
         <section class="banner">
             <div class="container">
-                <p>Os Melhores veiculos do Mercado, melhores serviços tudo do no mesmo lugar!Compre seu veiculo importado, faça sua manutenção ou tune seu carrro e deixe ele unico!</p>
-                <img src="img/kisspng-ferrari-f430-challenge-lamborghini-murciélago-spo-luxury-cars-5b65003a4f7251.4254277015333458503254.png" alt="Carros da tela inicaial">
+                <p>Transformando a compra de carros no Brasil. Carros incriveis, serviços e manutenção especializada 24 horas ao seu dispor.</p>
+                <img src="img/kisspng-ferrari-f430-challenge-lamborghini-murciélago-spo-luxury-cars-5b65003a4f7251.4254277015333458503254.png"  style="width: 50%; height: 20%" alt="Carros da tela inicaial">
             </div>
         </section>
         <section class="produtos">
@@ -24,10 +24,36 @@
                 <div class="items">
                   <% produtos.forEach(function(produto) { %>
                     <article>
-                      <div class="thumb"><img src="/uploads/<%= produto.imagem %>" style="width: 100%; height: 100%"></div>
+                      <div class="thumb"><img src="img/carro-logo-2.png %>" style="width: 100%; height: 100%"></div>
                       <h3><%= produto.nome %></h3>
                       <h4>R$ <%= produto.valor %></h4>
                     </article>
+                </div>
+            </article>
+            <h2>Sua Cesta De Compras</h2>
+            <div class="items">
+                <article>
+                    <div class="thumb"></div>
+                    <img src="img/Whey-100.png" alt="WHEY">
+                    <h3>Whey Protein Concentrado | Whey 100% Pure Pouch</h3>
+                    <h4>R$120,00</h4>
+                    <h5>Quantidade: 2</h5>
+                </article>
+                <article>
+                    <div class="thumb"></div>
+                    <img src="img/Creatina.png" alt="CREATINA">
+                    <h3>Aminoácidos | Creatina em Cápsulas | Integralmédica</h3>
+                    <h4>R$85,00</h4>
+                    <h5>Quantidade: 2</h5>
+                </article>
+                <article>
+                    <div class="thumb"></div>
+                    <img src="img/Barras.png" alt="BARRAS">
+                    <h3> Barra Pushing Bar | Sabor Chocolate | Integralmédica</h3>
+                    <h4>R$75,00</h4>
+                    <h5>Quantidade: 3</h5>
+                </article>
+                </div>
     
                     <% }) %>
                 </div>
@@ -35,7 +61,7 @@
         </section>
         <section class="sobre">
             <div class="container">
-                <img src="img/pexels-mike-192499.jpg" alt="Ilustração de pessoa passeando com um cachorro na cidade">
+                <img src="img/carros-exposicao.jpg"  style="width: 50%; height: 100%" alt="Ilustração de veículos">
                 <div class="text">
                     <h3>Os Carros mais incriveis e mais raros do Mercado ...
                     </h3>
